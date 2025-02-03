@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>UTK BizConnect</title>
     <style>
         /* Reset and base styles */
@@ -770,6 +770,176 @@
             flex-direction: column;
             gap: 1rem;
         }
+
+        /* Mobile-first responsive styles */
+        @media (max-width: 767px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 3rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-description p {
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .services-grid,
+            .why-choose-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                padding: 1.5rem;
+            }
+
+            .contact-form-container,
+            .quick-contact-container {
+                padding: 1.5rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-contact-social {
+                grid-template-columns: 1fr;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+
+        /* Adjust font sizes for better readability on mobile */
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 0.75rem 1.5rem;
+            }
+        }
+
+        /* Improve navigation for mobile */
+        @media (max-width: 767px) {
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 1rem 0;
+            }
+
+            .logo {
+                margin-bottom: 1rem;
+            }
+
+            .nav-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .nav-links a {
+                margin: 0.5rem 0;
+            }
+        }
+
+        /* Adjust modal styles for mobile */
+        @media (max-width: 767px) {
+            .modal-content {
+                width: 95%;
+                margin: 1rem auto;
+            }
+
+            .modal-header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1.5rem;
+            }
+
+            .modal-body,
+            .modal-footer {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Updated responsive styles */
+        @media (min-width: 768px) {
+            .hero-content,
+            .services-grid,
+            .contact-grid,
+            .footer-grid,
+            .why-choose-grid,
+            .about-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .nav-links {
+                display: flex;
+                align-items: center;
+            }
+            nav {
+                padding: 0.5rem 0;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-content,
+            .services-grid,
+            .contact-grid,
+            .footer-grid,
+            .why-choose-grid,
+            .about-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .services-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .contact-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
     </style>
 </head>
 <body>
@@ -1240,14 +1410,13 @@
                     <div class="quick-contact-container">
                         <h3>Quick Contact Information</h3>
                         <div class="contact-option">
-                            <a href="https://wa.me/919970804242" class="contact-link" target="tel:+91 9970-80-4242">
-                           
+                            <a href="tel:+91 9970-80-4242" class="contact-link">
                                 <img src="https://cdn-icons-png.flaticon.com/512/234/234378.png" alt="Phone">
                                 <span>+91 9970-80-4242</span>
                             </a>
-                            <a href="mailto:utkbizconnect@gmail.com" class="contact-link">
+                            <a href="/cdn-cgi/l/email-protection#1d6869767f74677e727373787e695d7a707c7471337e7270" class="contact-link">
                                 <img src="https://cdn-icons-png.flaticon.com/512/561/561188.png" alt="Email">
-                                <span>utkbizconnect@gmail.com</span>
+                                <span><span class="__cf_email__" data-cfemail="7f0a0b141d16051c1011111a1c0b3f18121e1613511c1012">[email&#160;protected]</span></span>
                             </a>
                             <a href="https://www.linkedin.com/company/_utkbizconnect/" target="_blank" class="contact-link">
                                 <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
@@ -1274,7 +1443,7 @@
                             <li>B2-105 Reva Complex</li>
                             <li>Viman Nagar Pune-14 MH IND</li>
                             <li>Phone: +91 9970-80-4242</li>
-                            <li>Email: utkbizconnect@gmail.com</li>
+                            <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ffafbe4ede6f5ece0e1e1eaecfbcfe8e2eee6e3a1ece0e2">[email&#160;protected]</a></li>
                         </ul>
                     </div>
                     <div class="footer-links">
@@ -1306,7 +1475,7 @@
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         function openModal(modalId) {
             document.getElementById(modalId).style.display = "block";
             document.body.style.overflow = "hidden";
@@ -1327,3 +1496,4 @@
     </script>
 </body>
 </html>
+
